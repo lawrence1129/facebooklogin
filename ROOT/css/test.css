@@ -1,0 +1,17 @@
+*{
+	font-size: 50px;
+	font-family: arial, comic sans, open sans;
+}
+h1{
+	color: #404040;
+	font-size: 80px;
+	font-family: arial, open sans;
+}
+p{
+	font-size: inherit;
+}
+div{
+	background-color: #004400;
+	width: 50px;
+	height: 80px;
+}

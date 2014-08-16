@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+	var countdownnumber = 5;
+	var countdownnumber2 = 9;
+	var countdownid,x;
+	function initial () {
+		x=document.getElementById('Countdown')
+		x.innerHTML = countdownnumber;
+		countdownnumber--;
+		countdownid=window.setInterval(countdownfunc, 1000);
+		var second =function() {
+			x=document.getElementById('Countdown2')
+			x.innerHTML = countdownnumber2;
+			countdownnumber--;
+			countdownid=window.setInterval(countdownfunc, 100);
+		}
+	}
+	function countdownfunc(){
+		x.innerHTML = countdownnumber;
+		if(countdownnumber==0){
+			alert("end");
+			clearInterval(countdownid);
+		}
+		countdownnumber--;
+	}
+
+</script>
+</head>
+<body onload="initial();">
+<p>countdown</p>
+<Table>
+<Tr>
+<Td><Div Id="Countdown"> </Div> </Td>
+<Td><Div Id="Countdown1">.</Div> </Td>
+<Td><Div Id="Countdown2"> </Div></Td> 
+</Tr>
+</Table>
+</body>
+</html>
